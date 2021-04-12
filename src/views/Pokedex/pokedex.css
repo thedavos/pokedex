@@ -1,0 +1,14 @@
+.pokedex {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 70px;
+}
+
+.pokedex__list {
+  margin-top: 40px;
+}
+
+.pokedex__input {
+  position: absolute;
+  top: 35px;
+}

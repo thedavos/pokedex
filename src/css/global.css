@@ -1,0 +1,37 @@
+html {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-family-lato);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--color-background-light);
+}
+
+@media (min-width: 481px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  html {
+    font-size: var(--font-size-base);
+  }
+
+  body {
+    font-size: var(--font-size-base);
+  }
+}

@@ -1,0 +1,17 @@
+.welcome__image {
+  display: block;
+  margin: auto;
+}
+
+.welcome__heading {
+  margin: 60px 0 30px 0;
+}
+
+.welcome__description {
+  text-align: center;
+  color: var(--color-gray-4);
+}
+
+.welcome__button {
+  margin-top: 50px;
+}

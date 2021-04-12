@@ -1,0 +1,16 @@
+.loader {
+  animation: fall 0.4s ease-in-out,
+    shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.4s;
+}
+
+.loader.--rotate {
+  animation: rotate 1s ease-in-out forwards infinite !important;
+}
+
+.loader__circle {
+  color: var(--color-white);
+}
+
+.loader__circle.--blink {
+  animation: blink 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) 2.4s;
+}

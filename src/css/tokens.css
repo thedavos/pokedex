@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #f22539;
+  --color-secondary: #c00e20;
+  --color-accent: #eca539;
+
+  --color-gray-1: #f5f5f5;
+  --color-gray-2: #e8e8e8;
+  --color-gray-3: #bfbfbf;
+  --color-gray-4: #5e5e5e;
+
+  --color-white: #f9f9f9;
+  --color-black: #353535;
+
+  --color-font-base: #353535;
+  --color-font-muted: #eca539;
+  --color-font-highlight: #f22539;
+  --color-font-inverted: #f9f9f9;
+
+  --color-background-light: #e5e5e5;
+
+  --font-size-base: 16px;
+  --font-size-xs: 1.1rem;
+  --font-size-sm: 1.3rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 1.7rem;
+  --font-size-xl: 2.3rem;
+  --font-size-2xl: 6rem;
+
+  --font-family-montserrat: 'Montserrat', -apple-system, sans-serif, system-ui;
+  --font-family-lato: 'Lato', -apple-system, sans-serif, system-ui;
+
+  --font-weight-hairline: 100;
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  --border-radius-none: 0;
+  --border-radius-xxs: 3px;
+  --border-radius-xs: 5px;
+  --border-radius-sm: 10px;
+  --border-radius-md: 20px;
+  --border-radius-lg: 30px;
+  --border-radius-xl: 60px;
+  --border-radius-full: 9999px;
+
+  --z-index-0: 0;
+  --z-index-10: 10;
+  --z-index-20: 20;
+  --z-index-30: 30;
+  --z-index-40: 40;
+  --z-index-50: 50;
+  --z-index-auto: auto;
+}

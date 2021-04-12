@@ -1,0 +1,10 @@
+.bottomBar {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+  padding: 18px 0;
+  box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-white);
+}
