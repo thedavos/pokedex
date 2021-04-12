@@ -55,6 +55,15 @@
   padding: 0 30px;
 }
 
+.pokeDetail__bottom-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pokeDetail__bottom-wrapper span {
+  margin-left: 8px;
+}
+
 .pokeDetail__button {
   margin: 0;
 }

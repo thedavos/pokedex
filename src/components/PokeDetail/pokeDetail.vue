@@ -38,9 +38,12 @@
       <div class="pokeDetail__divider"></div>
     </div>
     <div class="pokeDetail__bottom">
-      <poke-button class="pokeDetail__button" @click="copy(clipboard)"
-        >Share to my friends</poke-button
-      >
+      <div class="pokeDetail__bottom-wrapper">
+        <poke-button class="pokeDetail__button" @click="copy(clipboard)"
+          >Share to my friends</poke-button
+        >
+        <span v-if="copied">Copied!</span>
+      </div>
       <favorite-icon
         class="pokeDetail__favorite"
         :active="favorite"
@@ -93,7 +96,7 @@ export default defineComponent({
   setup(props, { emit }) {
     const { data: pokemonDetail } = getPokemonDetail(props.pokemon.name);
     const { onFavoritePokemon } = usePokemonFavorites();
-    const { copy } = useClipboard();
+    const { copy, copied } = useClipboard();
 
     const types = computed(() =>
       pokemonDetail.value?.types
@@ -121,6 +124,7 @@ export default defineComponent({
       capitalize,
       types,
       copy,
+      copied,
       clipboard,
       onFavoritePokemon,
       onOfficialArtworkLoad,
