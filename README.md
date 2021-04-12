@@ -1,27 +1,70 @@
-# Vue 3 + Typescript + Vite
+# Pokedex ![pikachu](https://cdn.emojidex.com/emoji/px32/pikachu.png 'pikachu')
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+Explora y busca cualquier pokemon que quieras ver en [pokeapi](https://pokeapi.co).
 
-## Recommended IDE Setup
+# Funcionalidades
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+- Traer pokemons de la api [pokeapi](https://pokeapi.co)
+- Agregar a favoritos cualquier pokemon y una sección de favoritos para visualizar tus pokemones favoritos
+- Carga infinita para traer pokemones en la pokedex
+- Visualizar los atributos de los pokemones (imagen, peso, tamaño, tipos)
+- Boton de compartir que permite copiar los atributos del pokemon en el portapapeles.
 
-### If Using `<script setup>`
+# Estructura de Proyecto
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+## Components
 
-## Type Support For `.vue` Imports in TS
+Directorio de componentes, debido al tamaño de la aplicación no se ha aplicado un sistema de componentes como Atomic Design. Sin embargo, si la aplicación fuera a crecer, esta podria distribuirse según Atomic Design de manera sencilla.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+## Layouts
 
-### If Using Volar
+Componentes de tipo presentacional, solo aplica estilos que permite a su contenido ordenarse según los wireframes.
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+## Views
 
-### If Using Vetur
+Componentes de tipo contenedor, existe tanto logica de aplicacion y llamadas a la api. Ademas estan enlazados al enrutador. Es el que distribuye la data a toda la aplicacion o hijos componentes directos a traves de propiedades.
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+## Services
+
+El servicio de la api para conseguir los pokemones
+
+- getAllPokemon: Traer 20 pokemones
+- getPokemonDetail: Traer los atributos de un pokemon dado un nombre
+- getMorePokemons: Traer más pokemones, de 20 en 20
+
+## Models
+
+Modelos de la api para usarlo en la aplicacion con Typescript.
+
+## CSS
+
+Implementacion de un sistema de diseño usando variables de CSS para la aplicación.
+
+## Utils
+
+Utilidades de la aplicación
+
+- sleep: Para dormir la aplicación según un tiempo
+- capitalize: Para capitalizar un texto
+
+## Composables
+
+Usado para implementar un mini store usando el api de Vue3.
+
+# Herramientas
+
+- [Vue3](https://en.reactjs.org/) - Libreria
+- [Typescript](https://www.typescriptlang.org/) - Superset de javascript
+- [VueUse](https://vueuse.org) - Utilidades de Vue
+- [VueRouter](https://next.router.vuejs.org) - Vue enrutador
+- [Axios](https://github.com/axios/axioshttps://github.com/axios/axios) - Para HTTP requests
+
+# Deployment
+
+[Netlify](https://davos-pokedex.netlify.app)
+
+# Para correr esta aplicación
+
+1. Clona este repositorio
+2. Corre `yarn`
+3. Corre `yarn dev`
